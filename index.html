@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>HomeWork</title>
+    <style>
+        body {
+            margin: 0;
+            background: #F4EDE5;
+        }
+        .anim3 {
+            width: 100px;
+            height: 100px;
+            transform: translate(-50%, -50%);
+            position: absolute; 
+            top: 50%; 
+            left: 50%;
+        }
+        span {
+            display: block;
+            position: absolute;
+            width: 40%;
+            height: 40%;
+            border-radius: 50%;
+            animation: run3 2s infinite ease-in-out;
+        }
+        
+        .one {
+            animation-delay: -1.5s;
+            background: blue;
+        }
+        .two {
+            animation-delay: -1s;
+            background: yellow;
+        }
+        .three {
+            animation-delay: -0.5s;
+            background: green;
+        }
+        .four{
+            background: red;
+        }
+        
+        @keyframes run3 {
+            0% {
+                transform: translate(0%);
+                border-radius: 50%;
+            }
+            25% {
+                transform: translate(200%); 
+                border-radius: 0%;
+            }
+            50% {
+                transform: translate(200%, 200%);
+                border-radius: 50%; 
+            }
+            75% {
+                transform: translate(0%, 200%); 
+                border-radius: 0%;
+            }
+        }
+        
+        .anim2{
+            height: 300px;
+            width: 600px;
+            animation: run2 10s infinite ease-in-out;
+            animation-delay: -2s;
+        }
+        
+        @keyframes run2 {
+            0% {
+                background: url(https://www.overclockers.ru/images/soft/2016/09/14/ac.jpg) center/cover;
+            }
+            25% {
+                background: url(https://www.divertone.com/wp-content/uploads/2016/11/tfa_poster_wide_header-1536x864-959818851016-1024x500_c.jpg) center/cover;
+            }
+            50% {
+                background: url(http://multbaby.ru/wp-content/uploads/2013/01/wpid-06qiPgVPr426.jpg) center/cover;
+            }
+            75% {
+                background: url(http://22dakika.org/wp-content/uploads/2015/09/1442195572-6d864acd-8afb-45fc-a161-7b1deb839ae0-1024x640.jpg) center/cover;
+            }
+            100% {
+                background: url(http://40.media.tumblr.com/33811cc89ab0fa91b5508f6d3759f622/tumblr_nmaiudgTyb1swrm2no1_1280.jpg) center/cover;
+            }
+        }
+        
+        @keyframes run1 {
+            0%{
+                background: red;
+                width: 50px;
+                height: 50px;
+            }
+            50%{
+                transform: translate(calc(60vw - 25px), calc(40vh - 25px));
+                background: blue;
+                width: 100px;
+                height: 100px;
+            }
+            100%{
+                transform: translate(60vw, 40vh);
+                background: red;
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .anim1{
+            position: absolute;
+            transform: translate(60vw,40vh);
+            border-radius: 50%;
+            animation: run1 1s infinite ease-in-out;
+            animation-delay: -1s;
+        }
+        @keyframes red{
+            0% {
+                background: #f00;
+            }
+            36% {
+                background: #f00;
+            }
+            37% {
+                background: #666;
+            }
+            38% {
+                background: #f00;
+            }
+            39% {
+                background: #666;
+            }
+            40% {
+                background: #f00;
+            }
+            41% {
+                background: #666;
+            }
+            42% {
+                background: #f00;
+            }
+            43% {
+                background: #666;
+            }
+            100% {
+                background: #666;
+            }
+        }
+        @keyframes yellow{
+            0% {
+                background: #666;
+            }
+            43% {
+                background: #666;
+            }
+            44% {
+                background: #ff0;
+            }
+            55% {
+                background: #ff0;
+            }
+            56% {
+                background: #666;
+            }
+            90% {
+                background: #666;
+            }
+            91% {
+                background: #ff0;
+            }
+            99% {
+                background: #ff0;
+            }
+            100% {
+                background: #666;
+            }
+        }
+        @keyframes green{
+            0% {
+                background: #666;
+            }
+            55% {
+                background: #666;
+            }
+            56% {
+                background: #0f0;
+            }
+            85% {
+                background: #0f0;
+            }
+            86% {
+                background: #666;
+            }
+            87% {
+                background: #0f0;
+            }
+            88% {
+                background: #666;
+            }
+            89% {
+                background: #0f0;
+            }
+            90% {
+                background: #666;
+            }
+            100% {
+                background: #666;
+            }
+        }
+        .anim4{
+            position: absolute;
+            transform: translate(50%,50%);
+        }
+        .red{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            border: 2px solid black;
+            margin-bottom: 2px;
+            animation: red 10s infinite ease-in-out;
+            animation-delay: -1s;
+        }
+        .yellow{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            border: 2px solid black;
+            margin-bottom: 2px;
+            animation: yellow 10s infinite ease-in-out;
+            animation-delay: -1s;
+        }
+        .green{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            border: 2px solid black;
+            animation: green 10s infinite ease-in-out;
+            animation-delay: -1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="anim1"></div>
+    <div class="anim2"></div>
+    <div class="anim3">
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+        <span class="four"></span>
+    </div>
+    <div class="anim4">
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="green"></div>
+    </div>
+</body>
+</html>
