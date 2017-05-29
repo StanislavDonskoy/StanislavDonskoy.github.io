@@ -1,31 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
+
 body{
     font-family: Lobster;
     margin: 0;
     padding: 0;
     border: 0;
-    background-color: #000;
+    background: #000;
 }
-header{
-    position: absolute;
-    left: -100px;
-    height: 300px;
-    width: 100px;
-}
+
 nav, ul{
     padding: 0;
     margin: 0;
+    border: 0;
 }
-button{
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+#hide{
     background: hsla(354, 79%, 10%, 0.8);
     height: 25px;
     width: 25px;
-    position: absolute;
+    position: fixed;
     left: 10px;
     top: 5px;
     border-radius: 50%;
     border: solid 1px #333;
 }
+
+header{
+    position: fixed;
+    left: -100px;
+    height: 300px;
+    width: 100px;
+}
+
 .kostil{
     transition: 1s;
 }
@@ -36,6 +47,7 @@ button{
     -o-transform: translate(100px, 0);
     transform: translate(100px, 0);
 }
+
 .menu{
     color: black;
     text-decoration: none;
@@ -46,80 +58,54 @@ button{
     text-align: center;
     font-family: fantasy;
 }
-a{
-    color: black;
-    text-decoration: none;
+
+.menu:hover{
+    background: hsl(354, 79%, 22%);
 }
+
+.gallery{
+    display: inline-block;
+    width: calc(90vw - 30px);
+    height: calc(60vw - 20px);
+    margin: 10px 15px 0px 15px;
+}
+
 main{
     width: 90vw;
     margin: auto;
     margin-top: 30px;
     background: rgba(100,100,100, 0.8);
 }
+
 .note_logo{
     width: 100%;
 }
+
 p{
     padding-left:10px;
     padding-right: 10px;
 }
+
+
+
 @media (min-width: 500px) {
-    p{
-        padding-left: 0;
-        padding-right: 0;
+    #hd{
+        transition: 0s;
     }
-    html, body{
-        background-color: #000;
+    
+    #hide{
+        transition: 0s;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: -300px;
     }
+    
     .vis{
         -webkit-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
         -o-transform: translate(0, 0);
         transform: translate(0, 0);
-    }
-    #hd{
-        transition: 0s;
-    }
-    #hide{
-        transition: 0s;
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        left: -300px;
-    }
-    p{
-        font-size: 1.25rem;
-    }
-    main{
-        width: 350px;
-        margin: auto;
-        margin-top: 40px;
-        padding: 10px;
-        background-color: rgba(100,100,100,0.8);
-    }
-    
-    .navigation{
-        display: inline-block;
-    }
-    
-    nav, ul{
-        padding: 0;
-    }
-    nav{
-        width: 500px;
-        margin: auto;
-    }
-    
-    .menu{
-        color: black;
-        text-decoration: none;
-        background: hsl(354, 79%, 25%);
-        height: 23px;
-        width: 70px;
-        padding: 5px 5px 5px 5px;
-        font-size: 0.9rem;
-        text-align: center;
-        font-family: fantasy;
     }
     
     header{
@@ -128,51 +114,70 @@ p{
         width: 100vw;
         height: 35px;
     }
+    
+    .navigation{
+        display: inline-block;
+    }
+    
+    nav{
+        width: 500px;
+        margin: auto;
+    }
+    
+    .gallery{
+        width: 330px;
+        height: 220px;
+        margin: 10px 15px 0px 15px;
+    }
+    
+    .menu{
+        height: 23px;
+        width: 70px;
+        padding: 5px 5px 5px 5px;
+        font-size: 0.9rem;
+    }
+    
+    p{
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 1.25rem;
+    }
+    
+    main{
+        width: 360px;
+        padding: 10px;
+    }
 }
 
 
 
 
 @media (min-width: 740px) {
-    p{
-        font-size: 1.25rem;
-    }
-    main{
-        width: 600px;
-        margin: auto;
-        margin-top: 40px;
-        padding: 10px;
-        background-color: rgba(100,100,100,0.8);
-    }
-    
-    .navigation{
-        display: inline-block;
-    }
-    
-    nav, ul{
-        padding: 0;
-    }
     nav{
         width: 740px;
-        margin: auto;
     }
     
     .menu{
-        color: black;
-        text-decoration: none;
-        background: hsl(354, 79%, 25%);
         height: 23px;
         width: 100px;
         padding: 5px 10px 5px 10px;
-        text-align: center;
         font-size: 1.2rem;
-        font-family: fantasy;
     }
     
-    header{
-        background: hsl(354, 79%, 20%);
-        width: 100vw;
-        height: 35px;
+    .gallery{
+        width: 300px;
+        height: 200px;
+        margin: 10px;
+    }
+    
+    p{
+        font-size: 1.25rem;
+    }
+    
+    main{
+        width: 644px;
+        margin-top: 40px;
+        padding: 10px;
     }
 }
 
@@ -180,45 +185,28 @@ p{
 
 
 @media (min-width: 1160px) {
+    nav{
+        width: 1160px;
+    }
+    
+    .menu{
+        height: 23px;
+        width: 150px;
+        padding: 5px 20px 5px 20px;
+        font-size: 1.5rem;
+    }
+    
+    .gallery{
+        width: 380px;
+        height: 230px;
+    }
     
     p{
         font-size: 1.4rem;
     }
     
     main{
-        width: 600px;
-        margin: auto;
-        margin-top: 40px;
-        padding: 10px;
-        background-color: rgba(100,100,100,0.8);
-    }
-    .navigation{
-        display: inline-block;
+        width: 804px;
     }
     
-    nav, ul{
-        padding: 0;
-    }
-    nav{
-        width: 1160px;
-        margin: auto;
-    }
-    
-    .menu{
-        color: black;
-        text-decoration: none;
-        background: hsl(354, 79%, 25%);
-        height: 23px;
-        width: 150px;
-        padding: 5px 20px 5px 20px;
-        text-align: center;
-        font-size: 1.5rem;
-        font-family: fantasy;
-    }
-    
-    header{
-        background: hsl(354, 79%, 20%);
-        width: 102vw;
-        height: 35px;
-    }
 }

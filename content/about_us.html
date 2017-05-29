@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>О нас</title>
+</head>
+<body>
+   
+    <header id="hd">
+      <nav>
+        <ul>
+          <li class="navigation"><a href="../index.html"><div class="menu">Главная</div></a></li>
+          <li class="navigation"><a href="./storyline.html"><div class="menu">Сюжет</div></a></li>
+          <li class="navigation"><a href="./note.html"><div class="menu">Тетрадь</div></a></li>
+          <li class="navigation"><a href="./characters.html"><div class="menu">Персонажи</div></a></li>
+          <li class="navigation"><a href="./gallery.html"><div class="menu">Галлерея</div></a></li>
+          <li class="navigation"><a href="./about_us.html"><div class="menu">О нас</div></a></li>
+        </ul>
+      </nav>
+    </header>
+    <button id="hide"></button>
+    
+    <script>
+        hide.addEventListener('click', function(){
+            hide.classList.add('kostil');
+            hide.classList.toggle('vis');
+            hd.classList.add('kostil');
+            hd.classList.toggle('vis');
+        })
+    </script>
+</body>
+</html>
