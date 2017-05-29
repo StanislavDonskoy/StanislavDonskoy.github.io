@@ -21,9 +21,8 @@
     </header>
     <button id="hide"></button>
     <main>
+        <img class="note_logo" src="./image/Death_Note_logo.jpg" alt="DeathNote">
         <action>
-            <img class="note_logo" src="./image/Death_Note_logo.jpg" alt="DeathNote">
-            
             <p>
                 Death Note — манга, придуманная Цугуми Обой и нарисованная Такэси Обатой, а также выпущенные на её основе анимационные сериал и фильмы, игровые фильмы, лайт-новел и видеоигры. Согласно опросу, проведенному в 2007 году министерством культуры Японии, занимает 10-е место среди лучшей манги всех времён.
             </p>
@@ -34,9 +33,10 @@
     </main>
     <script>
         hide.addEventListener('click', function(){
-          hide.classList.add('kostil');
-          hd.classList.toggle('vis');
-          hide.classList.toggle('vis');
+            hide.classList.add('kostil');
+            hide.classList.toggle('vis');
+            hd.classList.add('kostil');
+            hd.classList.toggle('vis');
         })
     </script>
 </body>
