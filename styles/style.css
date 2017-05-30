@@ -9,11 +9,43 @@ body{
     border: 0;
     background: #000;
 }
+li{
+    display: block;
+}
+
+.ilustrate1{
+    width: 32%;
+    display: inline-block;
+}
+.ilustrate2{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+.ilustrate3{
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+
+#note{
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    display: block;
+}
+#article_note{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.sploiler{
+    font-size: 1.25rem;
+}
 
 article{
-    margin-top: 50px; 
+    margin-top: 50px;
     padding-bottom: 30px;
-    padding-top: 1px; 
+    padding-top: 1px;
 }
 
 blockquote{
@@ -21,13 +53,13 @@ blockquote{
     color: #222;
 }
 
-.about_character1{
+.article1{
     padding-left: 10px;
     padding-right: 10px;
     background: #888;
 }
 
-.about_character2{
+.article2{
     padding-left: 10px;
     padding-right: 10px;
     background: #333;
@@ -45,6 +77,8 @@ h1, h2{
 }
 
 a{
+    margin-bottom: 0px;
+    margin-top: 0px;
     color: black;
     text-decoration: none;
 }
@@ -74,17 +108,17 @@ a{
 header{
     transition: 1s;
     position: fixed;
-    top: -267px;
+    top: -300px;
     left: 10px;
     height: 300px;
     width: 100px;
 }
 
 .vis{
-    -webkit-transform: translate(0px, 300px);
-    -ms-transform: translate(0px, 300px);
-    -o-transform: translate(0px, 300px);
-    transform: translate(0px, 300px);
+    -webkit-transform: translate(0px, 333px);
+    -ms-transform: translate(0px, 333px);
+    -o-transform: translate(0px, 333px);
+    transform: translate(0px, 333px);
 }
 
 .menu{
