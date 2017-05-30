@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Changa+One');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
 body{
     font-family: Lobster;
@@ -8,7 +10,35 @@ body{
     background: #000;
 }
 
-nav, ul{
+article{
+    margin-top: 50px; 
+    padding-bottom: 30px;
+    padding-top: 1px; 
+}
+
+blockquote{
+    font-size: 1.5rem;
+    color: #222;
+}
+
+.about_character1{
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #888;
+}
+
+.about_character2{
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #333;
+}
+
+h1, h2{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.head_menu, ul{
     padding: 0;
     margin: 0;
     border: 0;
@@ -20,32 +50,41 @@ a{
 }
 
 #hide{
-    background: hsla(354, 79%, 10%, 0.8);
-    height: 25px;
-    width: 25px;
+    background: hsl(354, 79%, 25%);
+    height: 33px;
+    width: 100px;
     position: fixed;
     left: 10px;
-    top: 5px;
-    border-radius: 50%;
-    border: solid 1px #333;
+    top: 0px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Changa One';
+    font-weight: bolder;
+    border: 0;
+}
+#hide:hover{
+    background: hsl(354, 79%, 22%);
+}
+
+#OldEnglishL{
+    margin: auto;
+    display: block;
 }
 
 header{
+    transition: 1s;
     position: fixed;
-    left: -100px;
+    top: -267px;
+    left: 10px;
     height: 300px;
     width: 100px;
 }
 
-.kostil{
-    transition: 1s;
-}
-
 .vis{
-    -webkit-transform: translate(100px, 0);
-    -ms-transform: translate(100px, 0);
-    -o-transform: translate(100px, 0);
-    transform: translate(100px, 0);
+    -webkit-transform: translate(0px, 300px);
+    -ms-transform: translate(0px, 300px);
+    -o-transform: translate(0px, 300px);
+    transform: translate(0px, 300px);
 }
 
 .menu{
@@ -56,7 +95,8 @@ header{
     width: 100px;
     font-size: 1.2rem;
     text-align: center;
-    font-family: fantasy;
+    font-family: 'Changa One';
+    font-weight: bolder;
 }
 
 .menu:hover{
@@ -85,8 +125,19 @@ p{
     padding-left:10px;
     padding-right: 10px;
 }
+.nav_characters{
+    padding: 10px 5% 0 5%;
+}
 
-
+.img_characters{
+    display: inline-block;
+    border-radius: 50%;
+    height: 32%;
+    width: 32%;
+}
+.img_character{
+    width: 100%;
+}
 
 @media (min-width: 500px) {
     #hd{
@@ -109,6 +160,7 @@ p{
     }
     
     header{
+        transition: 0s;
         position:static;
         background: hsl(354, 79%, 20%);
         width: 100vw;
@@ -119,7 +171,7 @@ p{
         display: inline-block;
     }
     
-    nav{
+     .head_menu{
         width: 500px;
         margin: auto;
     }
@@ -147,13 +199,21 @@ p{
         width: 360px;
         padding: 10px;
     }
+    .nav_characters{
+        padding: 10px;
+    }
+    
+    .img_characters{
+        height: 110px;
+        width: 110px;
+    }
 }
 
 
 
 
 @media (min-width: 740px) {
-    nav{
+    .head_menu{
         width: 740px;
     }
     
@@ -179,13 +239,18 @@ p{
         margin-top: 40px;
         padding: 10px;
     }
+    
+    .img_characters{
+        height: 101px;
+        width: 101px;
+    }
 }
 
 
 
 
 @media (min-width: 1160px) {
-    nav{
+    .head_menu{
         width: 1160px;
     }
     
@@ -208,5 +273,8 @@ p{
     main{
         width: 804px;
     }
-    
+    .img_characters{
+        height: 127px;
+        width: 127px;
+    }
 }

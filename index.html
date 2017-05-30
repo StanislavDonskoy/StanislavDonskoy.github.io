@@ -8,18 +8,18 @@
 </head>
 <body>
     <header id="hd">
-      <nav>
-        <ul>
-          <li class="navigation"><a href="./index.html"><div class="menu">Главная</div></a></li>
-          <li class="navigation"><a href="./content/storyline.html"><div class="menu">Сюжет</div></a></li>
-          <li class="navigation"><a href="./content/note.html"><div class="menu">Тетрадь</div></a></li>
-          <li class="navigation"><a href="./content/characters.html"><div class="menu">Персонажи</div></a></li>
-          <li class="navigation"><a href="./content/gallery.html"><div class="menu">Галлерея</div></a></li>
-          <li class="navigation"><a href="./content/about_us.html"><div class="menu">О нас</div></a></li>
-        </ul>
-      </nav>
+        <nav class="head_menu">
+            <ul>
+                <li class="navigation"><a href="./index.html"              ><div class="menu">Главная   </div></a></li>
+                <li class="navigation"><a href="./content/storyline.html"  ><div class="menu">Сюжет     </div></a></li>
+                <li class="navigation"><a href="./content/note.html"       ><div class="menu">Тетрадь   </div></a></li>
+                <li class="navigation"><a href="./content/characters.html" ><div class="menu">Персонажи </div></a></li>
+                <li class="navigation"><a href="./content/gallery.html"    ><div class="menu">Галлерея  </div></a></li>
+                <li class="navigation"><a href="./content/about_us.html"   ><div class="menu">О нас     </div></a></li>
+            </ul>
+        </nav>
     </header>
-    <button id="hide"></button>
+    <button id="hide">Меню</button>
     <main>
         <img class="note_logo" src="./image/Death_Note_logo.jpg" alt="DeathNote">
         <action>
@@ -33,9 +33,6 @@
     </main>
     <script>
         hide.addEventListener('click', function(){
-            hide.classList.add('kostil');
-            hide.classList.toggle('vis');
-            hd.classList.add('kostil');
             hd.classList.toggle('vis');
         })
     </script>
